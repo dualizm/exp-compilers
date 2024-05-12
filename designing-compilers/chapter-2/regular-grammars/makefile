@@ -8,7 +8,10 @@ PRJ_PASS_CHECKER := smPasswordChecker
 PRJ_NUMBERS := smNumbers
 PRJ_SIMPLE_NUMBERS := smSimpleNumbers
 
-all: $(PRJ_FSM) $(PRJ_BINCODE) $(PRJ_A12) $(PRJ_PASS_CHECKER) $(PRJ_NUMBERS) $(PRJ_SIMPLE_NUMBERS)
+all: makeDirs $(PRJ_FSM) $(PRJ_BINCODE) $(PRJ_A12) $(PRJ_PASS_CHECKER) $(PRJ_NUMBERS) $(PRJ_SIMPLE_NUMBERS)
+
+makeDirs:
+	mkdir -p bin lib
 
 $(PRJ_FSM):
 	cd $(PRJ_FSM) && $(MAKE)
