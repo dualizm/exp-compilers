@@ -1,1 +1,1 @@
-* implementation of tasks from the book designing compilers by Sergey Sverdlov
+Implementation of tasks from the book designing compilers by Sergey Sverdlov
